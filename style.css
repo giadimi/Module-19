@@ -10,9 +10,6 @@ body {
 .logo {
     width: 62px;
     height: 34px;
-    flex-shrink: 0;
-    padding: 0;
-    margin: 0;
     transform: rotateY(360deg);
     transform-origin: center;
     backface-visibility: hidden;
@@ -29,13 +26,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 65px;
-    top: 0;
-    left: 0;
 }
 
 nav a {
     text-align: center;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif; 
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -85,7 +80,6 @@ nav ul li {
     display: none;
     cursor: pointer;
     position: fixed;
-    color: white;
     right: 3%;
     top: 3%;
     z-index: 5;
@@ -108,8 +102,8 @@ nav ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  background-color: rgba(167, 5, 23, 0.92);
+  z-index: 2;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -170,10 +164,8 @@ object-fit: cover;
     width: 100%;
     text-align: center;
     justify-content: center;
-    font-family: 'NeueMontreal-Regular', Open Sans;
-    font-size: 16px;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     color: white;
-    font-weight: 400px;
     letter-spacing: 0.7px;
     margin-top: 107px;
 }
@@ -183,8 +175,7 @@ object-fit: cover;
     display: inline-block;
     color: white;
     font-size: 14px;
-    font-family: 'NeueMontreal-Regular', Open Sans;
-    font-weight: 400px;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     border: 1px solid white;
     padding: 9px 42px;
     border-radius: 30px;
@@ -204,13 +195,11 @@ object-fit: cover;
 
 .largelogo {
     width: 52%;
-    flex-shrink: 0;
     padding-top: 50px;
     padding-bottom: 42px;   
 }
 
 .stats {
-    width: 100%;
     display: flex;
     justify-content: center;
     gap:50px;
@@ -229,7 +218,7 @@ object-fit: cover;
 .stats h1 {
     color: #FFF;
     text-align: center;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 600;
@@ -239,7 +228,7 @@ object-fit: cover;
 .stats p {
     color: #FFF;
     text-align: center;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -322,7 +311,7 @@ h1 {
 .about-1 {
     color: #573963;
     text-align: justify;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -361,7 +350,7 @@ h1 {
     display: inline-block;
     color:white;
     font-size: 14px;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-style: normal;
     font-weight: 400px;
     border: 1px solid white;
@@ -436,7 +425,7 @@ h2 {
 
 h5 {
     color: #DD0426;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -490,7 +479,7 @@ h5 {
 .tools li {
     list-style-position: outside;
     color: white;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
@@ -539,7 +528,7 @@ h5 {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-style: normal;
     font-weight: 400px;
     border: 1px solid #E01F3F;
@@ -578,7 +567,7 @@ h5 {
   }
 
   .grid-item h6 {
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -587,7 +576,7 @@ h5 {
   }
 
   .grid-item p {
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open San, sans-serif;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
@@ -658,7 +647,7 @@ h5 {
     border: 0;
     float: left;
     color: #E2C2E5;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     align-items: center;
     justify-content: center;
 }
@@ -849,58 +838,45 @@ footer {
       top: 60px;
       right: 0;
       width: 100%;
-      background-color: #333;
-      z-index: 2;
+      z-index: 3;
+      font-size: 25px;
     }
   
     .nav ul {
       list-style: none;
       display: flex;
       flex-direction: column;
+      line-height: 200%;
     }
   
     .nav li {
       margin: 0 15px;
+    }
+
+    .logo {
+        margin: 5%;
+        width: 20%;
+        height: 20%;
     }
   
     .overlay-trigger {
       display: block;
       font-size: 1.5rem;
     }
-  
+
+    .overlay-circle.show {
+        display: flex;
+    }
+
     .overlay-close {
       display: none; /* Initially hide the close (X) button */
       font-size: 1.5rem;
     }
   
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: 1;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .overlay ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .overlay li {
-      margin-bottom: 15px;
-    }
-  
     .overlay.show {
         display: flex;
       }
+
       .nav.show {
         display: block;
       }
@@ -909,27 +885,48 @@ footer {
         display: block;
       }
     
-      .menu-toggle:checked + .overlay + .nav,
-      .overlay-close:checked + .overlay + .nav {
+      .menu-toggle:checked + .overlay + .nav + .overlay-circle
+      .overlay-close:checked + .overlay + .nav + .overlay-circle {
         display: flex;
       }
     
-      .menu-toggle:checked + .overlay + .overlay-close,
-      .overlay-close:checked + .overlay + .nav {
+      .menu-toggle:checked + .overlay + .overlay-close + .overlay-circle
+      .overlay-close:checked + .overlay + .nav + .overlay-circle {
         display: none;
       }
     
-      .menu-toggle:checked + .overlay + .overlay-trigger,
-      .overlay-close:checked + .overlay + .overlay-trigger {
+      .menu-toggle:checked + .overlay + .overlay-trigger + .overlay-circle
+      .overlay-close:checked + .overlay + .overlay-trigger + .overlay-circle {
         display: none;
       }
+
+      .sticky-title h1 {
+        font-size: 55px;
+    }
   }
   
   @media only screen and (max-width:520px) {
     h1 {
+        font-size: 50px; !important
+    }
+    h2 {
         font-size: 50px;
     }
   }
+
+  @media only screen and (min-width:520px max-width:750px) {
+    h1 {
+        font-size: 55px; !important
+    }
+  }
+
+  @media only screen and (min-width:620px max-width:750px) {
+    .about-image img {
+        padding-bottom: 10%;
+        padding-left: 0;
+    }
+  }
+
 
   @media only screen and (max-width:850px) {
     
@@ -978,7 +975,7 @@ footer {
         padding-left: 0;
         margin: 0 auto;
         text-align: center;
-        font-size: 62px;
+        font-size: 55px;
     }
     
     .skills-section p {
@@ -988,6 +985,10 @@ footer {
     .projects-grid-container {
         display: block;
         grid-template-columns: 100%;
+    }
+
+    .grid-item {
+        text-align: justify;
     }
    
     .row-split {
@@ -1012,7 +1013,6 @@ footer {
     .talk {
         padding: 10%;
         justify-content: center;
-        width: 100%;
         left: auto;
     }
 
@@ -1023,9 +1023,6 @@ footer {
 }
 
 @media only screen and (max-width:950px) {
-    h1 {
-        font-size: 62px;
-    }
 
     .left-contact svg {
         width: 45px;
@@ -1042,7 +1039,8 @@ footer {
     }
 
     .enjoy h1 {
-        font-size: 62px;
+        padding-top: 20%;
+        font-size: 55px;
     }
 
     .about-grid {
@@ -1055,6 +1053,7 @@ footer {
 
     .about-image {
         padding: 0;
+        padding-top: 0%;
     }
 
     .about-image img {
@@ -1100,11 +1099,12 @@ footer {
         bottom: 0;
         height: auto;
         padding-bottom: 10%;
+        margin-top: 10%;
     }
 
     .landscapes h2 {
-        font-size: 52px;
         line-height: 100%;
+        font-size: 55px;
     }
 
     .toolkit-container {
@@ -1123,7 +1123,7 @@ footer {
     }
 
     .tools-title h1 {
-        font-size: 62px;
+        font-size: 55px;
     }
     
     .tools {
@@ -1140,6 +1140,10 @@ footer {
         list-style-type: none;
     }
 
+    #upArrow {
+        width: 50px;
+        height: 50px;
+    }
 }
 
   @media only screen and (max-width:1200px) {
@@ -1185,7 +1189,7 @@ footer {
 
      /* ... Mobile Footer ... */
   
-     @media only screen and (max-width: 750px) {
+     @media only screen and (max-width: 850px) {
 
     .footer-grid {
         display: block;

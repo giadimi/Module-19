@@ -3,17 +3,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const overlay = document.querySelector('.overlay');
   const mobilenav = document.querySelector('.nav');
   const overlayClose = document.querySelector('.overlay-close');
+  const overlayCircle = document.querySelector('.overlay-circle');
 
   // Toggle the 'show' class on the overlay when the menu icon is clicked
   menuIcon.addEventListener('click', function () {
     overlay.classList.toggle('show');
     mobilenav.classList.toggle('show');
+    overlayCircle.classList.remove('show');
   });
 
   // Close the overlay when the close button is clicked
   overlayClose.addEventListener('click', function () {
     overlay.classList.remove('show');
+    overlayCircle.classList.toggle('show');
   });
+
 });
 
   // Scroll animations for project section
